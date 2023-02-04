@@ -44,12 +44,12 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-
+            publishToMavenLocal
             release(MavenPublication) {
                 from components.release
                 groupId = "com.redeyesncode.pancardedittext"
                 artifactId = "pancardedittext"
-                version = '1.0.0'
+                version = '1.0.4'
             }
         }
     }
